@@ -31,3 +31,32 @@ linux> gcc -o hello hello.c
 
 ## 1.4 Processors Read and Interpret Instructions Stored in Memory
 
+### 1.4.1 Hardware Organization of a System
+
+#### Buses
+
+Running throughout the system is a collection of electrical conduits called *buses* that carry bytes of information back and forth between the components. 
+
+Buses are typically designed to transfer fixed-size chunks of bytes known as *words*.
+
+*word size* : The number of bytes in a word, is a fundamental system parameter that varies across systems.
+
+#### I/O Devices
+
+**Input/output(I/O)** devices are the system’s connection to the external world. 
+
+Each I/O device is connected to the I/O bus by either a *controller* or an *adapter*. 
+
+#### Main Memory
+
+The *main memory* is a temporary storage device that holds both a program and the data it manipulates while the processor is executing the program.
+
+Physically, main memory consists of a collection of *dynamic random access memory*(DRAM) chips.
+
+Logically, memory is organized as a linear array of bytes, each with its own unique address starting at zero. 
+
+#### Processor
+
+The *center processing unit*(CPU), or simply *processor*, is the engine that interprets (or *executes*) instructions stored in main memory. 
+
+At its core is a word-size storage device (or *register*) called the *program counter* (PC). 
