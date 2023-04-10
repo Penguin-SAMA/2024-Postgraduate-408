@@ -25,3 +25,9 @@ linux> gcc -o hello hello.c
 
 ## 1.3 It Pays to Understand How Compilation Systems Work
 
+-   ***Optimizing program performance.*** 
+-   ***Understanding link-time errors.*** 
+-   ***Avoiding security heles.*** 
+
+## 1.4 Processors Read and Interpret Instructions Stored in Memory
+
