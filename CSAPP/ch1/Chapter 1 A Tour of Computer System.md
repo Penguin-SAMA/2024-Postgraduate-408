@@ -60,3 +60,61 @@ Logically, memory is organized as a linear array of bytes, each with its own uni
 The *center processing unit*(CPU), or simply *processor*, is the engine that interprets (or *executes*) instructions stored in main memory. 
 
 At its core is a word-size storage device (or *register*) called the *program counter* (PC). 
+
+### 1.4.2 Running the `hello` Program
+
+![image-20230412214220872](./assets/image-20230412214220872.png)
+
+## 1.5 Caches Matter
+
+From a programmer’s perspective, much of this copying is overhead that slows down the “real work” of the program.
+
+Because of physical laws, larger storage devices are slower than smaller storage devices. And faster devices are more expensive to build than their slower counterparts.
+
+To deal with the processor-memory gap, system designers include smaller, faster storage devcies called *cache memories* that serve as temporary staging areas for information that the processor is likely to need in the near future.
+
+L1 and L2 caches are implemented with a hardware technology known as *static random access memory* (SRAM). 
+
+## 1.6 Storage Devices Form a Hierarchy
+
+This notion of inserting a smaller, faster storage device between the processor and a larger, slower device turns out to be a general idea. 
+
+The main idea of a memory hierarchy is that storage at one level serves as a cache for storage at the next lower level. 
+
+![image-20230412223238914](./assets/image-20230412223238914.png)
+
+## 1.7 The Operating System Manages the Hardware
+
+*Operating system* is a layer of software interposed between the application program and the hardware.
+
+The operating system has two primary purposes:
+
+1.   To protect the hardware from misuse by runaway applications. 
+2.   To provide applications with simple and uniform mechanisms for manipulating complicated and often wildly different low-level hardware devices. 
+
+![image-20230413215902237](./assets/image-20230413215902237.png)
+
+The operating system achieves both goals via the fundamental abstractions shown in Figure 1.11 : *processes, virtual memory* and *files*. 
+
+As this figure suggests, files are abstractions for I/O devices, virtual memory is an abstrations for both the main memory and disk I/O devices, and processes are abstractions for the processor, main memory, and I/O devices. 
+
+### 1.7.1 Processes
+
+When a program such as `hello` runs on a modern system, the operating system provides the illusion that the program is the only one running on the system. 
+
+A *process* is the operating system’s abstraction for a running program. 
+
+*concurrently* : the instructions of one process are interleaved with the instructions of another process.
+
+*context switching* : a single CPU can appear to execute multiple processes concurrently by having the processor switch among them. 
+
+*context* : the operating system keeps track of all the state information that the process needs in order to run.
+
+![image-20230413230509153](./assets/image-20230413230509153.png)
+
+When the operating system decides to transfer control from the current process to som new process, it performs a *context switch* by saving the context of the current process, restoring the context of the new process, and then passing control to the new process.  
+
+The transition from one process to another is managed by the operating *system kernel*. 
+
+### 1.7.2 Threads
+
