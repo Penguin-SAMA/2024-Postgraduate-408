@@ -118,3 +118,29 @@ The transition from one process to another is managed by the operating *system k
 
 ### 1.7.2 Threads
 
+Although we normally think of a process as having a single control flow, in modern system a process can actually consist of multiple execution units, called *threads*, each running in the context of the process and sharing the same code and global data. 
+
+### 1.7.3 Virtual Memory
+
+*Virtual Memory* is an abstraction that provides each process with the illusion that it has exclusive use of the main memory. 
+
+Each process has the same uniform view of memory, which is known as its *virtual address space*. 
+
+![image-20230414205423446](./assets/image-20230414205423446.png)
+
+The topmost region of the address space is reserved for code and data in the operating system that is common to all processes. 
+
+The lower region of the address space holds the code and data defined by the user’s process. 
+
+-   *Program code and data*. Code begins at the same fixed address for all proccesses, followed by data locations that correspond to global C variables. 
+-   *Heap*. The code and data areas are followed immediately by the run-time *heap*.
+-   *Shared libraries*. Near the middle of the address space is an area that holds the code and data for *shared libraries* such as the C standard library and the math library. 
+-   *Stack*. At the top of user’s virtual address space is the *user stack* that the compiler uses to implement function calls. 
+-   *Kernel virtual memory*. The top region of the address space is reserved for the kernel.
+
+### 1.7.4 Files
+
+A *file* is a sequence of bytes, nothing more and noting less. 
+
+## 1.8 System Communicate with Other Systems Using Networks
+
