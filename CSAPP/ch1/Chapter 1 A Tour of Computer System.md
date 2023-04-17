@@ -144,3 +144,30 @@ A *file* is a sequence of bytes, nothing more and noting less.
 
 ## 1.8 System Communicate with Other Systems Using Networks
 
+Running the `hello` program remotely involves the five basic steps shown in FIgure.
+
+![image-20230416205739537](./assets/image-20230416205739537.png)
+
+## 1.9 Important Themes
+
+### 1.9.1 Amdahl’s law
+
+*Amdahl’s law* : When we speed up one part of a system, the effect on the overall system performance depends on both how significant this part was and how much it sped up. 
+
+>   Consider a system in which executing some application requires time $T_{old}$.
+>
+>   Suppose some part of the system requires a fraction $\alpha$ of this time, and we improve its performance by a factor of $k$. 
+>
+>   The component originally required time $\alpha T_{old}$, and it now requires time $(\alpha T_{old}) / k$.
+>
+>   The overall execution time would thus be:
+>   $$
+>   T_{new} = (1-\alpha)T_{old}+(\alpha T_{old})/k \\
+>   = T_{old}[(1-\alpha) + \alpha / k]
+>   $$
+>   From this, we can compute the speedup $S=T_{old}/T_{new}$as
+>   $$
+>   S=\frac{1}{(1-\alpha)+\alpha/k}
+>   $$
+
+The major insight of Amdahl’s law : To significantly speed up the entire system, we must improve the speed of a very large fraction of the overall system.
