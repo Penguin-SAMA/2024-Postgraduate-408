@@ -171,3 +171,29 @@ Running the `hello` program remotely involves the five basic steps shown in FIgu
 >   $$
 
 The major insight of Amdahl’s law : To significantly speed up the entire system, we must improve the speed of a very large fraction of the overall system.
+
+We are able to take some part of the system and speed it up to the point at which it takes a negligible amount of time. That is, we can setting $k$ to $\infin$ : $S_\infin = \frac{1}{1-\alpha}$. 
+
+### 1.9.2 Concurrency and Parallelism
+
+*Concurrency* : The general concept of a system with multiple, simultaneous activities. 
+
+*Parallelism* : The use of concurrency to make a system run faster. 
+
+#### Thread-Level Concurrency
+
+Building on the process abstraction, we are able to devise systems where multiple programs execute at the same time, leading to *concurrency*. 
+
+With threads, we can even have multiple control flows executing within a single process. 
+
+When we construct a system consisting of multiple processors all under the control of a single operating system kernel, we have a *multiprocessor system.*
+
+Multi-core processors have several CPUs integrated onto a single integrate-circuit chip.
+
+![image-20230418220030412](./assets/image-20230418220030412.png)
+
+**Hyperthreading**. Sometimes called *simultaneous multi-threading*, is a technique that allows a single CPU to execute multiple flows of control. 
+
+#### Instruction-Level Paralelism
+
+At a much lower level of abstraction, modern processors can execute multiple instructions at one time, a property known as *instruction-level praallelism*. 
