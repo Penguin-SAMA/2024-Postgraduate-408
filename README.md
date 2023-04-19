@@ -56,9 +56,9 @@ macbook算是主力机，上课、图书馆基本都用
 
 ipad就用于记手写笔记以及看电子书
 
-
-
 本仓库的markdown全是由Mac或Windows端的typora完成
+
+>   github的markdown显示非常差，我建议各位把这个仓库fork了之后在本地用typora或其他markdown浏览器查看笔记。
 
 代码则由NeoVim完成，会用到阿里云服务器。
 
