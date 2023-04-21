@@ -197,3 +197,17 @@ Multi-core processors have several CPUs integrated onto a single integrate-circu
 #### Instruction-Level Paralelism
 
 At a much lower level of abstraction, modern processors can execute multiple instructions at one time, a property known as *instruction-level praallelism*. 
+
+Processors that can sustain execution rates faster than 1 instruction per cycle are known as *superscalar processors*. 
+
+#### Single-Instruction, Multiple-Data (SIMD) Parallelism
+
+At the lowest level, many modern processors have special hardware that alllows a single instruction to cause multiple operations to be performed in parallel, a mode known as *single-instruction, multiple-data* (SIMD) parallelism. 
+
+### 1.9.3 The Imporance of Abstractions in Computer Systems
+
+The use of *abstructions* is one of the most important concepts in computer science. For example, one aspect of good programming practice is to formulate a simple application program interface (API) for a set of functions that allow programmers to use the code without having to delve into its inner workings. 
+
+## 1.10 Summary
+
+etc.
