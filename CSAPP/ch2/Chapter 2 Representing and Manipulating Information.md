@@ -22,3 +22,4 @@ Every byte of memory is identified by a unique number, known as its *address*, a
 
 ### 2.1.1 Hexadecimal Notation
 
+A single byte consists of 8 bits. 
