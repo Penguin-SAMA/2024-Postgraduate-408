@@ -1,4 +1,5 @@
 # 2024-Postgraduate-408
+
 📚💻这是我的备战2024计算机408考研的个人仓库，包含了我整理的复习笔记和资料，方便我随时复习和查阅📝💯
 
 本仓库不做任何软件、书籍、机构推荐，全是个人在备考过程中使用的资料。
@@ -6,6 +7,8 @@
 祝大家考研顺利，一举上岸呀ヾ(◍°∇°◍)ﾉﾞ；如果这些内容对你有帮助的话，别忘了star和fork哦(๑′ᴗ‵๑)
 
 ## 📅更新日记
+
+2023-07-22 鸽了。。感觉复习不完，做笔记太消耗时间了。。就当作os的专项复习看吧。
 
 2023-07-08 操作系统结束，接下来是数据结构，祭祖和鸡娃不知道先做哪个
 
@@ -24,6 +27,7 @@
 ## 📝内容
 
 - 笔记：包括408各个科目的每个章节的知识点和题型分析。
+
   - [数据结构笔记](https://github.com/Penguin-SAMA/2024-Postgraduate-408/tree/main/DataStructure)
   - [计算机网络笔记](https://github.com/Penguin-SAMA/2024-Postgraduate-408/tree/main/NetWork)
   - [计算机操作系统笔记](https://github.com/Penguin-SAMA/2024-Postgraduate-408/tree/main/OperatingSystem)
@@ -32,7 +36,6 @@
 - 练习题：主要来源于王道以及竟成的课后习题。
 - 历年真题：收集了历年的所有真题以及答案。
   - 真题目录：[历年真题](https://github.com/Penguin-SAMA/2024-Postgraduate-408/tree/main/exam)
-
 
 ### 教材
 
@@ -60,7 +63,7 @@ ipad就用于记手写笔记以及看电子书
 
 本仓库的markdown全是由Mac或Windows端的typora完成
 
->   github的markdown显示非常差，我建议各位把这个仓库fork了之后在本地用typora或其他markdown浏览器查看笔记。
+> github的markdown显示非常差，我建议各位把这个仓库fork了之后在本地用typora或其他markdown浏览器查看笔记。
 
 代码则由NeoVim完成，会用到阿里云服务器。
 
